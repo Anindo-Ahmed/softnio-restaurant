@@ -35,7 +35,7 @@ const Navbar = () => {
         <div className="lg:mr-16">
           <Link className="flex justify-start items-center space-x-2">
             <img src="../../public/images/logo.svg" alt="logo" className="w-9"/>
-            <h3 className="poppins lg:text-xl font-semibold">Restau 
+            <h3 className="poppins lg:text-xl text-2xl font-semibold">Restau 
             <span className="font-normal">rant</span> </h3>
           </Link>   
         </div>
