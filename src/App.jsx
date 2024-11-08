@@ -1,5 +1,6 @@
 import About from './components/About'
 import Banner from './components/Banner'
+import Foods from './components/Foods'
 import Navbar from './shared/Navbar'
 
 function App() {
@@ -11,6 +12,9 @@ function App() {
         <Banner/>
       </div>
        <About/>
+       <div>
+        <Foods/>
+       </div>
     </div>
   )
 }
