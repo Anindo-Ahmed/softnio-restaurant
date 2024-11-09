@@ -7,7 +7,7 @@ const Foods = () => {
     const responsiveOptions = [
         {
             breakpoint: '1400px',
-            numVisible: 2,
+            numVisible: 4,
             numScroll: 1
         },
         {
@@ -60,15 +60,15 @@ const Foods = () => {
             </div>
             {/* card carousel */}
             <div className="card">
-            <Carousel 
-            value={foods} 
-            numVisible={4} 
-            numScroll={4} 
-            responsiveOptions={responsiveOptions} 
-            className="custom-carousel" circular
-            autoplayInterval={3000} 
-            itemTemplate={productTemplate} />
-        </div>
+                <Carousel 
+                value={foods} 
+                numVisible={4} 
+                numScroll={4} 
+                responsiveOptions={responsiveOptions} 
+                orientation="horizontal"
+                autoplayInterval={3000}
+                itemTemplate={productTemplate} />
+            </div>
         </div>
     );
 };
