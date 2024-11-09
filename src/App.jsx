@@ -1,5 +1,6 @@
 import About from './components/About'
 import Banner from './components/Banner'
+import Booking from './components/Booking'
 import Foods from './components/Foods'
 import Navbar from './shared/Navbar'
 
@@ -14,6 +15,7 @@ function App() {
        <About/>
        <div>
         <Foods/>
+        <Booking/>
        </div>
     </div>
   )
