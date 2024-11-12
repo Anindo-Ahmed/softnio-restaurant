@@ -1,8 +1,11 @@
-# React + Vite
+Live Link: https://anindo-ahmed.github.io/softnio-restaurant/
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This site was built through React, which works in Vite.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Some frameworks or libraries are 
+- Tailwind (https://tailwindcss.com/) is a CSS framework and a "daisyUI" UI component.
+- React.Js (https://react.dev/) is a Javascript library.
+- React form hook (https://legacy.react-hook-form.com/) is used for form validation.
+- React tabs (https://github.com/reactjs/react-tabs) is used for functional tab.
+- Prime react (https://primereact.org/) is used for the carousel effect.
+- The slider effect has been inserted using vanilla JavaScript.
