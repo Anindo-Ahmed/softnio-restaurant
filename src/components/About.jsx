@@ -46,10 +46,10 @@ const About = () => {
 
             {/* Experience tab */}
             <TabPanel>
-              <h2 className="bebas-neue lg:text-6xl font-bold pt-8">
+              <h2 className="bebas-neue text-4xl lg:text-6xl font-bold pt-6 lg:pt-8">
                 Experience with delicious food
               </h2>
-              <p className="roboto text-base font-normal pt-[18px]">
+              <p className="roboto text-base font-normal lg:pt-[18px] pt-3">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare
                 non sed est cursus. Vel hac convallis ipsum, facilisi odio
                 pellentesque bibendum viverra tempus. Lorem ipsum dolor sit amet
@@ -57,26 +57,22 @@ const About = () => {
                 labore et dolore magna minim veniam nostrud exercitation.
               </p>
               <div className="flex gap-8 items-center pt-8">
-                <Link className="roboto text-[18px] font-bold text-black px-6 py-4 rounded-none bg-[#FEBF00] uppercase ">
+                <Link className="roboto lg:text-lg text-base font-bold text-black px-6 py-3 lg:py-4 rounded-none bg-[#FEBF00] uppercase ">
                   Book a table
                 </Link>
-                <span className="flex gap-2">
-                  <PiPhoneCall className="text-2xl text-[#B52B1D]" /> +88 3426
-                  739 485
-                </span>
               </div>
             </TabPanel>
 
             {/* Contact tab */}
             <TabPanel>
-              <h2 className="bebas-neue lg:text-6xl font-bold pt-8">
+              <h2 className="bebas-neue text-4xl lg:text-6xl font-bold pt-6 lg:pt-8">
                 Get in touch
               </h2>
-              <p className="roboto text-base font-normal pt-[18px]">
+              <p className="roboto text-base font-normal pt-4">
                 Our friendly team is always here to chat.
               </p>
-              <div class="grid grid-cols-1 gap-12 mt-10 md:grid-cols-2 lg:grid-cols-3">
-                <div>
+              <div class="grid grid-cols-1 gap-5 lg:gap-12 mt-10 md:grid-cols-2 lg:grid-cols-3">
+                <div >
                   <span class="inline-block p-3 text-[#B52B1D] rounded-full border shadow-2xl">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -94,13 +90,10 @@ const About = () => {
                     </svg>
                   </span>
 
-                  <h2 class="mt-4 text-lg font-medium text-gray-800">Email</h2>
-                  <p class="mt-2 text-gray-500 ">
-                    Our friendly team is here to help.
-                  </p>
-                  <p class="mt-2 text-gray-500">hello@merakiui.com</p>
+                  <h2 class="mt-2 text-lg font-medium text-gray-800">Email</h2>
+                  
+                  <p class="text-gray-500">demo@website.com</p>
                 </div>
-
                 <div>
                   <span class="inline-block p-3 text-[#B52B1D] rounded-full border shadow-2xl">
                     <svg
@@ -124,17 +117,13 @@ const About = () => {
                     </svg>
                   </span>
 
-                  <h2 class="mt-4 text-lg font-medium text-gray-800 ">
+                  <h2 class="mt-2 text-lg font-medium text-gray-800 ">
                     Office
                   </h2>
-                  <p class="mt-2 text-gray-500 ">
-                    Come say hello at our office HQ.
-                  </p>
-                  <p class="mt-2 text-gray-500">
-                    100 Smith Street Collingwood VIC 3066 AU
+                  <p class="text-gray-500">
+                    Jeddah, Saudi
                   </p>
                 </div>
-
                 <div>
                   <span class="inline-block p-3 text-[#B52B1D] rounded-full border shadow-2xl">
                     <svg
@@ -153,9 +142,8 @@ const About = () => {
                     </svg>
                   </span>
 
-                  <h2 class="mt-4 text-lg font-medium text-gray-600">Phone</h2>
-                  <p class="mt-2 text-gray-500 ">Mon-Fri from 8am to 5pm.</p>
-                  <p class="mt-2 text-gray-500">+88 3426 739 485</p>
+                  <h2 class="mt-2 text-lg font-medium text-gray-600">Phone</h2>
+                  <p class="text-gray-500">+883426739485</p>
                 </div>
               </div>
             </TabPanel>
@@ -164,8 +152,8 @@ const About = () => {
       </div>
 
       {/* services */}
-      <div className="lg:mt-[74px]">
-        <div class="grid grid-cols-1 gap-12 mt-10 md:grid-cols-2 lg:grid-cols-3">
+      <div className="lg:mt-[74px] mt-12">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           {/* Fast delivery */}
           <div className="flex items-center gap-4">
             <div>
@@ -232,10 +220,10 @@ const About = () => {
               </svg>
             </div>
             <div>
-              <h2 class="bebas-neue uppercase text-2xl lg:text-3xl font-bold text-[#0A1425]">
+              <h2 className="bebas-neue uppercase text-2xl lg:text-3xl font-bold text-[#0A1425]">
                 fast delivery
               </h2>
-              <p class="inter text-lg lg:text-xl font-normal text-[#0A1425] ">
+              <p className="inter text-lg lg:text-xl font-normal text-[#0A1425] ">
                 Within 30 minutes
               </p>
             </div>

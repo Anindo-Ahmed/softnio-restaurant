@@ -6,25 +6,25 @@ const Booking = () => {
     <div className="md:px-[15%] px-[30px] py-8 lg:py-[120px] bg-[url('../../public/images/bg_form.jpeg')] bg-no-repeat bg-cover">
       <div>
         <div>
-          <span className="roboto text-xl font-bold text-[#BD1F17] flex items-center gap-2">
+          <span className="roboto test-base lg:text-xl font-bold text-[#BD1F17] flex items-center gap-2">
             {" "}
             <FaSquareFull className="text-xs" />
-            Crispy, Every Bite Taste
+            Book Now
           </span>
           <h2 className="bebas-neue text-4xl lg:text-6xl font-bold pt-2 lg:pt-4 text-white">
             Book Your Table
           </h2>
-          <p className="roboto text-base font-normal text-white lg:mt-4 lg:mb-10 lg:w-1/2">
+          <p className="roboto text-base font-normal text-white mt-2 lg:mt-4 lg:mb-10 lg:w-1/2">
             Enim tempor eget pharetra facilisis sed maecenas adipiscing. Eu leo
             molestie vel, ornare non id blandit netus.
           </p>
         </div>
 
         {/* Form */}
-        <section class="max-w-xl">
+        <section class="max-w-xl mt-10">
           <form>
             <div class="grid grid-cols-1 gap-6 mt-4 ">
-                <div className="flex gap-7 justify-between">
+                <div className="flex lg:flex-row flex-col gap-7 justify-between">
                     <div>
                 <label class="text-white " for="username">
                   Your Name
@@ -51,7 +51,7 @@ const Booking = () => {
                 />
               </div>
                 </div>
-              <div className="flex gap-7 justify-between">
+              <div className="flex lg:flex-row flex-col gap-7 justify-between">
                 <div>
                 <label class="text-white " for="date">
                   Reservation Date
