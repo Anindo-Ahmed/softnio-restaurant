@@ -1,7 +1,27 @@
 import { FaSquareFull } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { useForm } from "react-hook-form"
 
 const Booking = () => {
+  const {
+    register,
+    resetField,
+    handleSubmit,
+    watch,
+    formState: { errors },
+  } = useForm()
+
+  const onSubmit = (data) => {  
+    console.log(data)
+    if(data){
+      resetField("name");
+      resetField("email");
+      resetField("date");
+      resetField("people");
+      resetField("message");
+    }  
+  }
+
   return (
     <div className="md:px-[15%] px-[30px] py-8 lg:py-[120px] bg-[url('../../public/images/bg_form.jpeg')] bg-no-repeat bg-cover">
       <div>
@@ -22,7 +42,7 @@ const Booking = () => {
 
         {/* Form */}
         <section class="max-w-xl mt-10">
-          <form>
+          <form onSubmit={handleSubmit(onSubmit)}>
             <div class="grid grid-cols-1 gap-6 mt-4 ">
                 <div className="flex lg:flex-row flex-col gap-7 justify-between">
                     <div>
@@ -34,6 +54,7 @@ const Booking = () => {
                   id="username"
                   type="text"
                   class="w-full px-4 py-2 mt-2 text-black border border-white roboto focus:border-blue-400 focus:ring-opacity-40 focus:outline-none focus:ring"
+                  {...register("name", {required: true})}
                 />
               </div>
               <div>
@@ -48,6 +69,7 @@ const Booking = () => {
                   id="emailAddress"
                   type="email"
                   class="w-full px-4 py-2 mt-2 text-black border border-white roboto focus:border-blue-400 focus:ring-opacity-40 focus:outline-none focus:ring"
+                  {...register("email")}
                 />
               </div>
                 </div>
@@ -63,6 +85,7 @@ const Booking = () => {
                   id="date"
                   type="date"
                   class="w-full px-4 py-2 mt-2 text-black border border-white roboto focus:border-blue-400 focus:ring-opacity-40 focus:outline-none focus:ring"
+                  {...register("date")}
                 />
               </div>
               <div>
@@ -77,6 +100,7 @@ const Booking = () => {
                   id="totalPeople"
                   type="number"
                   class="w-full px-4 py-2 mt-2 text-black border border-white roboto focus:border-blue-400 focus:ring-opacity-40 focus:outline-none focus:ring"
+                  {...register("people")}
                 />
               </div>
               </div>  
@@ -92,14 +116,15 @@ const Booking = () => {
                   id="message"
                   type="text"
                   class="block w-full px-4 py-2 mt-2 text-black border border-white roboto focus:border-blue-400 focus:ring-opacity-40 focus:outline-none focus:ring"
+                  {...register("message")}
                 />
               </div>
             </div>
 
             <div class="flex justify-srart mt-6">
-            <Link className="roboto text-sm font-bold text-black px-6 py-4 rounded-none bg-[#FEBF00] uppercase ">
+            <button className="roboto text-sm font-bold text-black px-6 py-4 rounded-none bg-[#FEBF00] uppercase ">
             Book Now
-            </Link>
+            </button>
             </div>
           </form>
         </section>
