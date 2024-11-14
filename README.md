@@ -1,4 +1,4 @@
-Live Link: https://anindo-ahmed.github.io/softnio-restaurant/
+Live Link: [https://anindo-ahmed.github.io/softnio-restaurant/](https://softniodreamrestaurant.netlify.app/)
 
 This site was built through React, which works in Vite.
 
